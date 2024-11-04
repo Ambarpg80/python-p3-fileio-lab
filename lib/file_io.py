@@ -7,6 +7,6 @@ def append_file(file_name, append_content):
     test_file.write(append_content)
 
 def read_file(file_name):
-    with open(f'{file_name}.txt', encoding='utf-8') as read_file:
-        for line in read_file:
+    with open(f'{file_name}.txt', encoding='utf-8') as file_to_read:
+        for line in file_to_read:
             return line
